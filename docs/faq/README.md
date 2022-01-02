@@ -77,3 +77,7 @@ chown -R www-data:www-data catch/
 ### 出现路由未定义
 - 检查 runtime\catch 目录下是否有缓存
 - 检查对应的模块是否开启, module.json 文件 enable 字段
+
+### 访问前台项目时 Invalid Host header
+- 在 vue.config.js文件的devServer中添加   disableHostCheck: true
+- 意为跳过host检查
